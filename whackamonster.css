@@ -1,0 +1,118 @@
+h1 {
+    font-family: 'Creepster', cursive;
+    font-size: 275%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background: #a847db;
+    text-align: center;
+}
+
+#image1 {
+    height: 10%;
+    width: 10%;
+    border-radius: 60px;
+}
+
+#play, #replay {
+    color: #dbd947;
+    background: black;
+    border: 4px solid #a847db;
+    padding: 10px 24px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.input {
+    background-color: #e7e7e7;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 50px;
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.gameinfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.hole {
+    height: 100px;
+    width: 100px;
+    border: 3px solid rgb(30, 30, 30);
+    border-radius: 100%;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+  cursor: pointer;
+}
+
+#hole1 {
+    background: rgb(200, 30, 150);
+}
+
+#hole2 {
+    background: rgb(150, 200, 200);
+}
+
+#hole3 {
+    background: rgb(200, 50, 100);
+}
+
+#hole4 {
+    background: rgb(100, 100, 200);
+}
+
+#hole5 {
+    background: rgb(240, 75, 120);
+}
+
+#hole6 {
+    background: rgb(75, 50, 220);
+}
+
+.monster {
+    height: 80%;
+    width: 80%;
+    background: url('https://st2.depositphotos.com/4584623/7213/v/450/depositphotos_72139677-stock-illustration-funny-monster-face.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -100%; /* Hidden initially */
+    left: 10%;
+    transition: bottom 0.5s;
+  border-radius: 60px;
+}
+
+.hole.active .monster {
+    bottom: 10%; /* Monster pops out */
+}

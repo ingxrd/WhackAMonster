@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="whackamonster.css">
+    <link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet'> 
+    <title>Whack a Monster</title>
+  </head>
+  <body>
+    <h1>
+        <img src="https://st3.depositphotos.com/6742662/37540/v/450/depositphotos_375407334-stock-illustration-cool-happy-cartoon-monster-face.jpg"
+            id="image1" />
+        <div id="welcomeSection">
+            <p id="welcomeMessage">Who dares to play Whack-a-Monster?</p>
+            <input type="text" id="playerName" placeholder="Enter your name here" class="input" />
+        </div>
+        <button id="play" onclick="welcomeMessage()">Play</button>
+        <button id="replay" class="hidden" onclick="replayGame()">Replay</button>
+
+        <div class="gameinfo">
+            <div id="playersName" class="hidden"></div>
+            <div id="score" class="hidden">Score: 0</div>
+            <div id="timer" class="hidden">Time Left: 30s</div>
+        </div>
+
+        <div class="game">
+            <div class="row">
+                <div class="hole hidden" id="hole1"></div>
+                <div class="hole hidden" id="hole2"></div>
+                <div class="hole hidden" id="hole3"></div>
+            </div>
+            <div class="row">
+                <div class="hole hidden" id="hole4"></div>
+                <div class="hole hidden" id="hole5"></div>
+            </div>
+            <div class="row">
+                <div class="hole hidden" id="hole6"></div>
+            </div>
+        </div>
+    </h1>
+    <script src="whackamonster.js"></script>
+  </body>
+</html>
